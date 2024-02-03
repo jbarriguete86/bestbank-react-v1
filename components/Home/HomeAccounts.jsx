@@ -12,7 +12,7 @@ export default function HomeAccounts(){
     const newArray=[mainAccounts,expenses,savings]
     
     function mountComponent(){
-        const componentArr= newArray.map(object=>{
+        const BannerArr= newArray.map(object=>{
             return(
                 <Button key={object.id} className="accounts-btn" onClick={()=>handleData(object)}>
                     <Banner className={`accountsBtn-banner ${object.on && "selected accountOpt-selected"}`}>
@@ -22,7 +22,9 @@ export default function HomeAccounts(){
                 </Button>
             )
         })
-        return componentArr
+
+
+        return BannerArr
     }
 
 
