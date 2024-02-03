@@ -22,13 +22,8 @@ export default function HomeAccounts(){
                 </Button>
             )
         })
-
-
         return BannerArr
     }
-
-
-    
 
 
     return  (
