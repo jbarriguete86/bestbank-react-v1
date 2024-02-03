@@ -47,7 +47,7 @@ export default function Header(){
 
     function handleClick(element){
        setSelection(element.children)
-       !isNotSmallDevice && toggleOpen()
+       isSmallScreen && toggleOpen()
       }
 
 
