@@ -50,11 +50,6 @@ export default function Header(){
        isSmallScreen && toggleOpen()
       }
 
-      function mountHeaderContainer(){
-        if(open || !isSmallScreen){
-            <HeaderContainer>{mountComponent()}</HeaderContainer>
-        }
-      }
 
 
     return (
@@ -62,7 +57,7 @@ export default function Header(){
             <header className="hero">
                 <HeaderIcon/>
                 <HamburgerIcon />
-                {mountHeaderContainer()}    
+                {(open || !isSmallScreen) && <HeaderContainer>{mountComponent()}</HeaderContainer>}    
             </header>
         </HeaderContext.Provider>
         
