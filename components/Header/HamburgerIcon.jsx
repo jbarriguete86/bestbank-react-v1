@@ -10,7 +10,7 @@ export default function HamburgerIcon(){
 
     return (
         <>
-            {open ? (<Button onclick={()=>{toggleOpen()}}  className="close-options">X</Button>) : (<Button onClick={()=>{toggleOpen()}}><GiHamburgerMenu className='hamburger-icon'/></Button>)}
+            {open ? (<Button onClick={()=>{toggleOpen()}}  className="close-options">X</Button>) : (<Button onClick={()=>{toggleOpen()}}><GiHamburgerMenu className='hamburger-icon'/></Button>)}
             
         </>
     )
