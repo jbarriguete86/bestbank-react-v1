@@ -8,6 +8,6 @@ export default function HomeHeaderOption({children, className}){
 
 
     return (
-        <Button onTouchStart={()=>{handleClick({children})}} onClick={()=>{handleClick({children})}} className={`header-btn ${className && className}`}>{children}</Button>
+        <Button onMouseDown={()=>{handleClick({children})}}  className={`header-btn ${className && className}`}>{children}</Button>
     )
 }
