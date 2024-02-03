@@ -14,7 +14,7 @@ export default function HomeAccounts(){
     function mountComponent(){
         const BannerArr= newArray.map(object=>{
             return(
-                <Button key={object.id} className="accounts-btn" onClick={()=>handleData(object)}>
+                <Button key={object.id} className="accounts-btn" onTouchStart={()=>{handleData(object)}} onClick={()=>handleData(object)}>
                     <Banner className={`accountsBtn-banner ${object.on && "selected accountOpt-selected"}`}>
                         <Banner.Left>{object.title}</Banner.Left>
                         <Banner.Right>{object.balance}</Banner.Right>
